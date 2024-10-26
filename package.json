@@ -2,13 +2,14 @@
   "name": "limitedstring-ts",
   "version": "1.0.0",
   "description": "A TypeScript library to create and manipulate strings with size limitations",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/LimitedString.js",
+  "types": "dist/LimitedString.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "jest",
     "test:watch": "jest --watch",
-    "lint": "eslint . --ext .ts",
+    "lint": "eslint --ext .ts,.tsx src",
+    "lint:fix": "eslint --ext .ts,.tsx --fix src",
     "prepare": "npm run build"
   },
   "repository": {

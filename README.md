@@ -25,14 +25,16 @@ Import the library and use it in your TypeScript or JavaScript project:
 ```typescript
 import { LimitedString } from "limitedstring-ts";
 
-const myString = new LimitedString("Hello, World!", 10);
-console.log(myString.getValue()); // Output: "Hello, Wor"
+const myString = new LimitedString("Hello, World!", 10); // throws error
+
+
+const otherString = new LimitedString("Hello", 10); // this is okay
 ```
 
 ## Features
 
 - Create strings with a specified maximum length.
-- Provides utility methods to manipulate and validate the strings.
+- An error is thrown at construction time if the string is not valid.
 
 ## Documentation
 

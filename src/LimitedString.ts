@@ -43,4 +43,4 @@ export function createLimitedString<T extends number>(str: string, maxLength: T)
         throw new Error(`String exceeds the maximum length of ${maxLength} characters.`);
     }
     return str as LimitedString<T>;
-};
+}
